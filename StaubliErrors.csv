@@ -1,0 +1,833 @@
+﻿Id,Default
+0,No Error
+1,uniVAL plc server license not installed
+2,uniVAL plc server demo period has expired. Reboot is needed
+3,Lifebit Error. The lifebit period seems to be not stable.
+4,Not defined
+5,Try to load a non-existing server.
+6,Error while loading server. check event logger for more details
+7,ArmIO error: IO signal not responding
+8,"Controller IO error: IO signal not responding (UsrIn, Valves, Fout, Fin)"
+9,unknown server Key or server not ready
+10,Robot model could not be identified. Check event logger for more information
+20,Invalid function code
+21,BankID not defined in user database or user frame not defined in plc database (range: [0..31]).
+22,Command not supported for this controller.
+23,TCP not defined
+24,Mdesc not defined
+25,Joint not defined
+26,Point not defined
+27,Invalid  value for VEL
+28,Invalid value for ACCEL
+29,Invalid value for DECEL
+30,Invalid value for TVEL
+31,Invalid value for RVEL
+32,Invalid value for LEAVE
+33,Invalid value for REACH
+34,Invalid value for BLEND. Range is [1..3]
+35, Userframe cannot be computed. Check the position of the 3 construction points
+36,Invalid point index for Userframe computation range is: [1..3]
+37,Invalid configuration for a point
+38,Try to access a datatype that does not exist. (1=Point 2=Joint 3=TCP 4=Mdesc)
+39,Invalid size for a bank
+40,Position not reachable.
+41,Motion stack is locked because a previous motion has failed.
+43,Change in configuration detected - Shoulder
+44,Change in configuration detected - Elbow
+45,Change in configuration detected - Wrist
+46,Robot powering ON/OFF sequence has failed.
+47,
+48,"Cannot execute movement, no database has been loaded."
+49,
+50,Cannot change monitor speed. Robot not in ‘Remote’ working mode.
+51,User-frame number is out of range [0..31]
+52,Tool number is out of range [0..31]
+60,uniVALplc client library initialization failed.
+61,Parameter AxesGroup not in range.
+62,Index parameter not in range.
+63,Invalid Buffer mode (0=$'Aborted$' 1=$'Buferred$' 6=$'Blending Joint$' 7=$'Blending Cartesian$')
+64,Invalid Transition Mode (0=’None’ 3=’Corner distance’ 10=’Blending distances).
+65,Communication reset during transaction. (Communication protocol aborted)
+66,Data of the profinet module cannot be read at specified address.
+67,Invalid inpt/output signal number.
+68,Operation timeout. Server acknowledgment missed.
+90,RemoteMCP mode not activated. Dummy plug not detected. Check that dummy plug is installed on J110.
+92,Invalid Jog mode selected. (1=Joint 2=Frame 3=Tool)
+93,Cannot jog: Manual mode requested
+94,Cannot jog: Robot power is OFF
+110,Internal error #10 while loading a data base. Please contact your local Stäubli business unit
+111,Internal error #11 while loading a data base. Please contact your local Stäubli business unit
+112,Internal error #12 while loading a data base. Please contact your local Stäubli business unit
+113,Internal error #13 while loading a data base. Please contact your local Stäubli business unit
+114,Internal error #14 while loading a data base. Please contact your local Stäubli business unit
+120,Internal error #20 while loading a data base. Please contact your local Stäubli business unit
+121,Internal error #21 while loading a data base .Please contact your local Stäubli business unit
+122,Internal error #22 while loading a data base. Please contact your local Stäubli business unit
+123,Internal error #23 while loading a data base. Please contact your local Stäubli business unit
+130,Internal error #30 while loading a data base. Please contact your local Stäubli business unit
+131,Internal error #31 while loading a data base. Please contact your local Stäubli business unit
+132,"Cannot load database, Device not found."
+133,"Cannot load database, Device not ready"
+134,"Cannot load database, Device timeout"
+139,"Cannot load database, File not found"
+142,"Cannot load database, No answer from FTP server."
+199,Not response from RSI board.
+200,Enveloppe error.(0x1503)
+201,internal DSI board voltage error
+202,redundancy check error in DSI board
+203,internal DSI error
+204,communication error with one encoder
+205,shortcut on RBR signal enable1 (J1204)
+206,shortcut on RBR signal enable2 (J1204)
+207,shortcut on RBR signal mode1 (J1204)
+208,shortcut on RBR signal mode2 (J1204)
+209,shortcut on RBR signal select1 (J1204)
+210,shortcut on RBR signal select2 (J1204)
+211,shortcut on RBR signal select3 (J1204)
+212,shortcut on RBR signal select4 (J1204)
+213,invalid voltage on a RBR input
+214,open wire on brake 1
+215,open wire on brake 2
+216,open wire on brake 3
+217,open wire on brake 4
+218,open wire on brake 5
+219,open wire on brake 6
+220,DSI board alarm: unexpected encoder feedback on axis 1
+221,DSI board alarm: unexpected encoder feedback on axis 1
+222,DSI board alarm: unexpected encoder feedback on axis 2
+223,DSI board alarm: unexpected encoder feedback on axis 2
+224,DSI board alarm: unexpected encoder feedback on axis 3
+225,DSI board alarm: unexpected encoder feedback on axis 3
+226,DSI board alarm: unexpected encoder feedback on axis 4
+227,DSI board alarm: unexpected encoder feedback on axis 4
+228,DSI board alarm: unexpected encoder feedback on axis 5
+229,DSI board alarm: unexpected encoder feedback on axis 5
+230,DSI board alarm: unexpected encoder feedback on axis 6
+231,DSI board alarm: unexpected encoder feedback on axis 6
+232,"cut wire, disconnected or shortcut on valve A1"
+233,"cut wire, disconnected or shortcut on valve A2"
+234,"cut wire, disconnected or shortcut on valve B1"
+235,"cut wire, disconnected or shortcut on valve B2"
+236,"cut wire, disconnected or shortcut on brake 1"
+237,"cut wire, disconnected or shortcut on brake 2"
+238,"cut wire, disconnected or shortcut on brake 3"
+239,"cut wire, disconnected or shortcut on brake 4"
+240,"cut wire, disconnected or shortcut on brake 5"
+241,"cut wire, disconnected or shortcut on brake 6"
+242,shortcut on a valve signal
+243,shortcut on a brake signal
+244,shortcut on a RBR signal
+245,DSI temperature is too high
+246,invalid brake power supply
+247,unexpected voltage on encoder 1 power supply
+248,unexpected voltage on encoder 2 power supply
+249,unexpected voltage on encoder 3 power supply
+250,unexpected voltage on encoder 4 power supply
+251,unexpected voltage on encoder 5 power supply
+252,unexpected voltage on encoder 6 power supply
+253,DSI in standalone mode: please check if RBR is not activated or press update button
+254,An encoder change detected. Encoder validation procedure is required (calibration page).
+255,safety alarm: reboot is required after validation of the faulty safety signal
+256,unexpected STO feedback from the drives: STO1 OFF
+257,unexpected STO feedback from the drives: STO1 ON
+258,unexpected STO feedback from the drives: STO2 OFF
+259,unexpected STO feedback from the drives: STO2 ON
+260,diagnostic is missing. Check safety board I/O on control panel
+261,diagnostic is missing. Check safety board I/O on control panel
+262,inconsistent safety stop signal from the MCP (MCPES1 off)
+263,inconsistent safety stop signal from the MCP (MCPES2 off)
+264,"inconsistent safety stop signal from user stop USIA (USIA1 (J100-1, J101-7) off)"
+265,"inconsistent safety stop signal from user stop USIA (USIA2 (J100-2, J101-8) off)"
+266,inconsistent safety stop signal from user stop USIB (USIB1 (J100-5) off)
+267,inconsistent safety stop signal from user stop USIB (USIB2 (J100-6) off)
+268,inconsistent safety stop signal from user stop USIC (USIC1 (J100-9) off)
+269,inconsistent safety stop signal from user stop USIC (USIC2 (J100-10) off)
+270,inconsistent safety stop signal from user stop USID (USID1 (J100-13) off)
+271,inconsistent safety stop signal from user stop USID (USID2 (J100-14) off)
+272,communication lost between the CPU and the safety board
+273,drive error
+274,interruption or too much delay in the communication between the MCP and the safety board
+275,safety stop request from MCP
+276,safety stop request from MCP
+277,safety stop request from MCP
+278,"ESTOP on WMS (J101 5-7,6-8) or safety stop request from user USIA (J100 1-3,2-4)"
+279,user stop USIA1 (J100-1)
+280,user stop USIA2 (J100-2)
+281,user stop USIB (J100-5/6)
+282,user stop USIB1 (J100-5)
+283,user stop USIB2 (J100-6)
+284,user stop USIC (J100-9/10)
+285,user stop USIC1 (J100-9)
+286,user stop USIC2 (J100-10)
+287,user stop USID (J100-13/14)
+288,user stop USID1 (J100-13)
+289,user stop USID2 (J100-14)
+290,no working mode request from the CPU (safety need a WMS and there is no WMS connected)
+291,SS1 safety stop condition from external safety PLC
+292,SS2 safety stop condition from external safety PLC
+293,diagnostic is missing. Check safety board I/O on control panel
+294,diagnostic is missing. Check safety board I/O on control panel
+295,WMS stop (WMS signal WMS-Local (J101-1))
+296,WMS stop (WMS signal WMS-Remote (J101-2))
+297,WMS stop (WMS signal WMS-Manu (J101-3))
+298,working mode change
+299,working mode change
+300,working mode change
+301,arm power is not allowed in brake release mode
+302,diagnostic is missing. Check safety board I/O on control panel
+303,brake test timeout
+304,activation of brake test mode
+305,the MCP plug was not placed in time after the MCP removal request
+306,a safety restart is needed
+307,safety reset signal activated
+308,the enabling device is released
+309,release the enabling device and press it again
+310,safe velocity required but disabled
+311,safe referencing required but not defined
+312,safety overspeed
+313,safe joint limits overpassed
+314,movement detected in Safe Operating Stop mode
+315,the enabling device was not released 1s after activation of service auto
+316,safety stop request from Zone1
+317,safety stop request from Zone2
+318,diagnostic is missing. Check safety board I/O on control panel
+319,diagnostic is missing. Check safety board I/O on control panel
+320,diagnostic is missing. Check safety board I/O on control panel
+321,diagnostic is missing. Check safety board I/O on control panel
+322,diagnostic is missing. Check safety board I/O on control panel
+323,diagnostic is missing. Check safety board I/O on control panel
+324,diagnostic is missing. Check safety board I/O on control panel
+325,manual slow working mode expected
+326,brake release mode expected to open brakes without arm power
+327,a brake is still in closing phase
+328,no brake is selected
+329,several brakes are selected
+330,no communication between CPU and safety board RSI9
+331,diagnostic is missing. Check safety board I/O on control panel
+332,diagnostic is missing. Check safety board I/O on control panel
+333,diagnostic is missing. Check safety board I/O on control panel
+334,diagnostic is missing. Check safety board I/O on control panel
+335,diagnostic is missing. Check safety board I/O on control panel
+336,diagnostic is missing. Check safety board I/O on control panel
+337,diagnostic is missing. Check safety board I/O on control panel
+338,diagnostic is missing. Check safety board I/O on control panel
+339,diagnostic is missing. Check safety board I/O on control panel
+340,temperature out of range
+341,internal voltage out of range
+342,internal error
+343,the safety application contains faults
+344,safety configuration is corrupted
+345,the safety configuration does not match the safety application
+346,the format of the safety configuration is not supported
+347,internal communication error
+348,test output fault
+349,input deactivation fault
+350,"signal on USIA1 (J100-1) is not the expected test signal TDO0 (J100-3/8/11, J101-5, J103-7)"
+351,"signal on USIA2 (J100-2) is not the expected test signal TDO1 (J100-4, J101-6, J103-12)"
+352,"signal on USIB1 (J100-5) is not the expected test signal TDO2 (J100-7/16, J103-5)"
+353,"signal on USIB2 (J100-6) is not the expected test signal TDO0 (J100-3/8/11, J101-5, J103-7)"
+354,"signal on USIC1 (J100-9) is not the expected test signal TDO0 (J100-3/8/11, J101-5, J103-7)"
+355,"signal on USIC2 (J100-10) is not the expected test signal TDO3 (J100-12/15, J103-3)"
+356,"signal on USID1 (J100-13) is not the expected test signal TDO3 (J100-12/15, J103-3)"
+357,"signal on USID2 (J100-14) is not the expected test signal TDO2 (J100-7/16, J103-5)"
+358,"signal on WMS-Local (J101-1) is not the expected test signal TDO0 (J100-3/8/11, J101-5, J103-7)"
+359,"signal on WMS-Remote (J101-2) is not the expected test signal TDO0 (J100-3/8/11, J101-5, J103-7)"
+360,"signal on WMS-Manu (J101-3) is not the expected test signal TDO0 (J100-3/8/11, J101-5, J103-7)"
+361,"signal on WMS-Reset (J101-4) is not the expected test signal TDO1 (J100-4, J101-6, J103-12)"
+362,"signal on Enabling1 (J103-8) is not the expected test signal TDO0 (J100-3/8/11, J101-5, J103-7)"
+363,"signal on Enabling2 (J103-17) is not the expected test signal TDO1 (J100-4, J101-6, J103-12)"
+364,"signal on Estop1 (J103-6) is not the expected test signal TDO2 (J100-7/16, J103-5)"
+365,"signal on Estop2 (J103-4) is not the expected test signal TDO3 (J100-12/15, J103-3)"
+366,signal on USOA1 (J102-1) is not as expected
+367,signal on USOA2 (J102-2) is not as expected
+368,signal on USOB1 (J102-5) is not as expected
+369,signal on USOB2 (J102-6) is not as expected
+370,signal on USOC1 (J102-9) is not as expected
+371,signal on USOC2 (J102-10) is not as expected
+372,internal signal on STO1 (J222-10) is not as expected
+373,internal signal on STO2 (J222-10) is not as expected
+374,shortcut to 24V on USOA1 (J102-1) or USOA2 (J102-2)
+375,shortcut to 24V on USOB1 (J102-5) or USOB2 (J102-6)
+376,shortcut to 24V on USOC1 (J102-9) or USOC2 (J102-10)
+377,shortcut to 24V on STO1 or STO2
+378,shortcut to 24V on STO1 or STO2
+379,safety overrun. Reduce the number/type of monitoring points
+380,diagnostic is missing. Check safety board I/O on control panel
+381,diagnostic is missing. Check safety board I/O on control panel
+382,diagnostic is missing. Check safety board I/O on control panel
+383,diagnostic is missing. Check safety board I/O on control panel
+384,unreferenced error on DSI board
+385,safety license missing or over
+386,RSI temperature exceeds threshold
+387,Encoder on Axis1 exceeds a temperature threshold
+388,Encoder on Axis2 exceeds a temperature threshold
+389,Encoder on Axis3 exceeds a temperature threshold
+390,Encoder on Axis4 exceeds a temperature threshold
+391,Encoder on Axis5 exceeds a temperature threshold
+392,Encoder on Axis6 exceeds a temperature threshold
+393,"Safe referencing (manu or auto) need to be activated in safety program because of SEL, SLS or SZM configuration"
+394,continuous axis license not compatible with safety version lower than 200.004
+395,maintenance mode is not allowed by the current user profile
+396,current working mode is not allowed by the current user profile
+397,Safe referencing inconsistency: positions of $'safe position 1$' and $'safe position 2$' should be different for all joint
+398,SS2 is unsupported in current safety version (requested from external safety PLC?)
+399,Invalid working mode. Try to perform an action which is not allowed in the current working mode.
+400,Cannot settle arm power: error reading DSI temperature.
+401,Cannot settle arm power: DSI temperature must be above 0 degrees Celsius.
+403,Arm power shutdown: internal power error (24V_OK in ARPS module)
+404,Arm power shutdown: controller power supply shutdown detected (MAIN_POWER_OK signal)
+405,Arm power shutdown: due to prepareCpuShutdown VAL3 function call
+406,Cannot apply arm power: controller not yet initialized.
+407,Cannot apply arm power: simultaneous power off request.
+408,Cannot apply arm power: arm power is still in disabling phase.
+410,Overspeed on joint. (0x0209)
+411,Cannot move: cannot cross singularity in this case.(0x021c)
+412,Translation or Rotational velocity too high (0x021e) (0x021f)
+413,Cartesian position unreachable with the specified configuration. (0x0215)
+414,Jog mode cannot be selected: first enable arm power.(0x3f15)
+415,"Jog mode cannot be selected: first select manual working mode, then enable arm power. (0x3f16)"
+416,Jog move impossible: first select a jog mode.(0x3f19)
+417,Invalid move axis or direction. (0x3f1A)
+418,Cannot apply arm power: park the pendant on the cradle.(0x3f22)
+420,
+421,
+438,Safety board communication error. Please check event logger of Stäubli controller.
+440,system event CPU-BatteryOff. CPU board battery is not present or dead.
+441,system event CPU-Overcurrent. Overcurrent detected on CPU.
+442,system event CPU-CpuReadingFailed. CPU temperature reading failed.
+443,system event CPU-BBReadingFailed. Baseboard temperature reading failed.
+444,system event CPU-FanReadingFailed. CPU board fan speed reading error.
+445,system event CPU-BatteryReadingFailed. Battery state reading failed.
+446,system event CPU-OvercurrentReadingFailed. CPU board overcurrent state reading error.
+447,system event CPU-CpuTemperatureLow. CPU temperature is lower than minimum threshold).
+448,system event CPU-CpuTemperatureWarning. CPU temperature exceeded the warning threshold.
+449,system event CPU-CpuTemperatureLimit. CPU temperature exceeded the error threshold. Behaviour of CPU board is uncertain.
+450,system event CPU-BBTemperatureLow. Baseboard temperature is lower than minimum threshold.
+451,system event CPU-BBTemperatureWarning. Baseboard temperature exceeded the warning threshold.
+452,system event CPU-BBTemperatureLimit. Baseboard temperature exceeded the error threshold Behaviour of CPU board is uncertain.
+453,
+454,system event CPU-FanHigh. CPU board fan speed is higher than limit.
+455,CPU fan control failed.
+456,Safety board error $'Not ready after a minute$': Failed to initialize. Please reboot the controller.
+457,Safety board error: Not ready anymore.
+458,Safety alarm.
+459,Safety error . A reboot is required.
+460,Safety board error communication error. Please check event logger of Stäubli controller and Staubli support service.
+461,
+470,Invalid safe referencing position.
+471,Safety restart failed during safe referencing procedure.
+472,The number of the safe reference position does not match the status of safe referencing procedure.
+473,The reference position is out of range.
+479,The test brake procedure failed.
+480,No
+481,Hibernate function not supported by controller
+482,Timeout waiting for confirmation of the safety board.
+483,Robot must be disabled to activate power save.
+484,
+485,
+486,
+487,Wake up function not supported by controller
+488,Timeout waiting for encoder interface ready state
+489,Timeout waiting for safety board ready state
+513,Internal motion generator error.
+514,Invalid parameter value.
+515,Invalid motion generator state.
+520,Joint position out of software limits.
+521,Position out of software limits on joints: %s.
+522,Overspeed on joint %u.
+525,Arm position not allowed.
+526,Translation velocity too high.
+527,Rotation velocity too high.
+530,No joint solution found (no convergence). Cartesian position probably out of reach.
+531,Cartesian position out of joint limits.
+532,Cartesian position out of workspace.
+533,Cartesian position unreachable with the specified configuration.
+534,Orientation unreachable with this arm.
+535,The arm position found is in a forbidden area.
+536,The arm positions found are either outside joint limits or inside forbidden areas.
+540,Cannot cross singularity in this case.
+541,Internal error: Cartesian path discontinuity.
+542,Configuration discontinuity: the joint position reached does not match the arm configuration requested for next movement.
+543,Robot not at trajectory start position.
+544,The Cartesian path is leading a multi-turn joint out of its range.
+550,Circular arc: the angle between start and intermediate points exceeds 180 deg.
+551,Circular arc: the angle between intermediate and end points exceeds 180 deg.
+552,"Circular arc: start, intermediate and end points are too close."
+553,"Circular arc: the orientation change between start and intermediate, or intermediate and end points is exactly 180 deg. The direction of the move is"
+554,Cartesian blending: the rotation is too large. Move direction maybe ambiguous.
+560,No blending supported with compliant moves.
+561,No blending supported with movejSync.
+562,$'joint$' blending not supported with tracking movements. Use $'Cartesian$' instead.
+563,No blending supported with trajMove.
+564,No blending supported with splines.
+565,Invalid blending in mdesc : $'Cartesian$' blending is not possible when switching between {external axes+arm} and {arm only} kinematics.
+570,Invalid data for this arm (wrong number of joints or wrong kinematic).
+571,Invalid kinematic chain part.
+572,Part mounting error: a resetMotion() is required to switch to carried part trajectory mode.
+573,Part mounting error: a resetMotion() is required to switch to carried tool trajectory mode.
+574,Part mounting error: carried part mode is not supported for this move.
+580,A $'trackOn$' movement is required to start a conveyor tracking sequence.
+581,A $'trackOff$' movement is required to end a conveyor tracking sequence.
+582,The moving frame is different from the previous one. Use a $'trackon$' movement to switch between moving frames.
+583,The tracking movements stopped: %s
+584,Tracking iterations failed: the conveyor may be out of reach or too fast.
+585,Internal tracking error.
+586,Conveyor too fast to be tracked.
+590,"Alter: invalid status, command ignored."
+591,Alter: alteration of the path starting.
+592,Alter: alteration of the path stopping.
+800,Unexpected application runtime error. Check error logger
+810,Invalid numerical calculation (division by zero).
+811,Invalid numerical calculation (e.g.ln(-1))
+820,Access to an array with an index that is larger than the array size.
+821,Access to an array with negative index or resize to zero.
+829,Invalid task name. See taskCreate() instruction.
+830,The specified name does not correspond to any VAL 3 task.
+831,A task with the same name already exists. See taskCreate instruction.
+832,Only 2 different periods for synchronous tasks are supported. Change scheduling period.
+840,Not enough memory space available.
+841,Not enough memory space to run the task. See the run memory size.
+860,Maximum instruction run time exceeded.
+861,Internal VAL 3 interpreter error
+870,Invalid instruction parameter. See the corresponding instruction.
+880,Uses data or a program from a library not loaded in the memory.
+881,Incompatible kinematic: Use of a point/joint/config that is not compatible with the arm kinematic.
+882,The reference frame or tool of a variable belongs to a library and is not accessible.
+890,The task cannot resume from the location specified. See taskResume() instruction.
+900,The speed specified in the motion descriptor is invalid (negative or too great).
+901,The acceleration specified in the motion descriptor is invalid (negative or too great).
+902,The deceleration specified in the motion descriptor is invalid (negative or too great).
+903,The translation velocity specified in the motion descriptor is invalid (negative or too great).
+904,The rotation velocity specified in the motion descriptor is invalid (negative or too great).
+905,The reach parameter specified in the movement descriptor is invalid (negative).
+906,The leave parameter specified in the movement descriptor is invalid (negative).
+922,Attempt to write in a system input.
+923,"Use of a dio, aio or sio input/output not connected to a system input/output."
+924,Attempt to access a protected system input/output
+925,"Read or write error on a dio, aio or sio (field bus error)"
+950,"Cannot run this movement instruction: a previous movement request could not be completed (point out of reach, singularity, configuration problem, etc.)"
+953,Movement command not supported
+954,"Invalid movement instruction: target out of reach, or check the movement descriptor."
+960,Invalid flange tool coordinates
+961,Invalid world tool coordinates
+962,Use of a point without a reference frame. See Definition.
+963,Use of a frame without a reference frame. See Definition.
+964,Use of a tool without reference tool. See Definition.
+965,Invalid frame or reference tool (global variable linked to a local variable)
+999,Unexpected error. Please check event logger of Stäubli controller.
+0,No Error
+1,uniVAL plc server license not installed
+2,uniVAL plc server demo period has expired. Reboot is needed
+3,Lifebit Error. The lifebit period seems to be not stable.
+4,Not defined
+5,Try to load a non-existing server.
+6,Error while loading server. check event logger for more details
+7,ArmIO error: IO signal not responding
+8,"Controller IO error: IO signal not responding (UsrIn, Valves, Fout, Fin)"
+9,unknown server Key or server not ready
+10,Robot model could not be identified. Check event logger for more information
+20,Invalid function code
+21,BankID not defined in user database or user frame not defined in plc database (range: [0..31]).
+22,Command not supported for this controller.
+23,TCP not defined
+24,Mdesc not defined
+25,Joint not defined
+26,Point not defined
+27,Invalid  value for VEL
+28,Invalid value for ACCEL
+29,Invalid value for DECEL
+30,Invalid value for TVEL
+31,Invalid value for RVEL
+32,Invalid value for LEAVE
+33,Invalid value for REACH
+34,Invalid value for BLEND. Range is [1..3]
+35, Userframe cannot be computed. Check the position of the 3 construction points
+36,Invalid point index for Userframe computation range is: [1..3]
+37,Invalid configuration for a point
+38,Try to access a datatype that does not exist. (1=Point 2=Joint 3=TCP 4=Mdesc)
+39,Invalid size for a bank
+40,Position not reachable.
+41,Motion stack is locked because a previous motion has failed.
+43,Change in configuration detected - Shoulder
+44,Change in configuration detected - Elbow
+45,Change in configuration detected - Wrist
+46,Robot powering ON/OFF sequence has failed.
+47,
+48,"Cannot execute movement, no database has been loaded."
+49,
+50,Cannot change monitor speed. Robot not in ‘Remote’ working mode.
+51,User-frame number is out of range [0..31]
+52,Tool number is out of range [0..31]
+60,uniVALplc client library initialization failed.
+61,Parameter AxesGroup not in range.
+62,Index parameter not in range.
+63,Invalid Buffer mode (0=$'Aborted$' 1=$'Buferred$' 6=$'Blending Joint$' 7=$'Blending Cartesian$')
+64,Invalid Transition Mode (0=’None’ 3=’Corner distance’ 10=’Blending distances).
+65,Communication reset during transaction. (Communication protocol aborted)
+66,Data of the profinet module cannot be read at specified address.
+67,Invalid inpt/output signal number.
+68,Operation timeout. Server acknowledgment missed.
+90,RemoteMCP mode not activated. Dummy plug not detected. Check that dummy plug is installed on J110.
+92,Invalid Jog mode selected. (1=Joint 2=Frame 3=Tool)
+93,Cannot jog: Manual mode requested
+94,Cannot jog: Robot power is OFF
+110,Internal error #10 while loading a data base. Please contact your local Stäubli business unit
+111,Internal error #11 while loading a data base. Please contact your local Stäubli business unit
+112,Internal error #12 while loading a data base. Please contact your local Stäubli business unit
+113,Internal error #13 while loading a data base. Please contact your local Stäubli business unit
+114,Internal error #14 while loading a data base. Please contact your local Stäubli business unit
+120,Internal error #20 while loading a data base. Please contact your local Stäubli business unit
+121,Internal error #21 while loading a data base .Please contact your local Stäubli business unit
+122,Internal error #22 while loading a data base. Please contact your local Stäubli business unit
+123,Internal error #23 while loading a data base. Please contact your local Stäubli business unit
+130,Internal error #30 while loading a data base. Please contact your local Stäubli business unit
+131,Internal error #31 while loading a data base. Please contact your local Stäubli business unit
+132,"Cannot load database, Device not found."
+133,"Cannot load database, Device not ready"
+134,"Cannot load database, Device timeout"
+139,"Cannot load database, File not found"
+142,"Cannot load database, No answer from FTP server."
+199,Not response from RSI board.
+200,Enveloppe error.(0x1503)
+201,internal DSI board voltage error
+202,redundancy check error in DSI board
+203,internal DSI error
+204,communication error with one encoder
+205,shortcut on RBR signal enable1 (J1204)
+206,shortcut on RBR signal enable2 (J1204)
+207,shortcut on RBR signal mode1 (J1204)
+208,shortcut on RBR signal mode2 (J1204)
+209,shortcut on RBR signal select1 (J1204)
+210,shortcut on RBR signal select2 (J1204)
+211,shortcut on RBR signal select3 (J1204)
+212,shortcut on RBR signal select4 (J1204)
+213,invalid voltage on a RBR input
+214,open wire on brake 1
+215,open wire on brake 2
+216,open wire on brake 3
+217,open wire on brake 4
+218,open wire on brake 5
+219,open wire on brake 6
+220,DSI board alarm: unexpected encoder feedback on axis 1
+221,DSI board alarm: unexpected encoder feedback on axis 1
+222,DSI board alarm: unexpected encoder feedback on axis 2
+223,DSI board alarm: unexpected encoder feedback on axis 2
+224,DSI board alarm: unexpected encoder feedback on axis 3
+225,DSI board alarm: unexpected encoder feedback on axis 3
+226,DSI board alarm: unexpected encoder feedback on axis 4
+227,DSI board alarm: unexpected encoder feedback on axis 4
+228,DSI board alarm: unexpected encoder feedback on axis 5
+229,DSI board alarm: unexpected encoder feedback on axis 5
+230,DSI board alarm: unexpected encoder feedback on axis 6
+231,DSI board alarm: unexpected encoder feedback on axis 6
+232,"cut wire, disconnected or shortcut on valve A1"
+233,"cut wire, disconnected or shortcut on valve A2"
+234,"cut wire, disconnected or shortcut on valve B1"
+235,"cut wire, disconnected or shortcut on valve B2"
+236,"cut wire, disconnected or shortcut on brake 1"
+237,"cut wire, disconnected or shortcut on brake 2"
+238,"cut wire, disconnected or shortcut on brake 3"
+239,"cut wire, disconnected or shortcut on brake 4"
+240,"cut wire, disconnected or shortcut on brake 5"
+241,"cut wire, disconnected or shortcut on brake 6"
+242,shortcut on a valve signal
+243,shortcut on a brake signal
+244,shortcut on a RBR signal
+245,DSI temperature is too high
+246,invalid brake power supply
+247,unexpected voltage on encoder 1 power supply
+248,unexpected voltage on encoder 2 power supply
+249,unexpected voltage on encoder 3 power supply
+250,unexpected voltage on encoder 4 power supply
+251,unexpected voltage on encoder 5 power supply
+252,unexpected voltage on encoder 6 power supply
+253,DSI in standalone mode: please check if RBR is not activated or press update button
+254,An encoder change detected. Encoder validation procedure is required (calibration page).
+255,safety alarm: reboot is required after validation of the faulty safety signal
+256,unexpected STO feedback from the drives: STO1 OFF
+257,unexpected STO feedback from the drives: STO1 ON
+258,unexpected STO feedback from the drives: STO2 OFF
+259,unexpected STO feedback from the drives: STO2 ON
+260,diagnostic is missing. Check safety board I/O on control panel
+261,diagnostic is missing. Check safety board I/O on control panel
+262,inconsistent safety stop signal from the MCP (MCPES1 off)
+263,inconsistent safety stop signal from the MCP (MCPES2 off)
+264,"inconsistent safety stop signal from user stop USIA (USIA1 (J100-1, J101-7) off)"
+265,"inconsistent safety stop signal from user stop USIA (USIA2 (J100-2, J101-8) off)"
+266,inconsistent safety stop signal from user stop USIB (USIB1 (J100-5) off)
+267,inconsistent safety stop signal from user stop USIB (USIB2 (J100-6) off)
+268,inconsistent safety stop signal from user stop USIC (USIC1 (J100-9) off)
+269,inconsistent safety stop signal from user stop USIC (USIC2 (J100-10) off)
+270,inconsistent safety stop signal from user stop USID (USID1 (J100-13) off)
+271,inconsistent safety stop signal from user stop USID (USID2 (J100-14) off)
+272,communication lost between the CPU and the safety board
+273,drive error
+274,interruption or too much delay in the communication between the MCP and the safety board
+275,safety stop request from MCP
+276,safety stop request from MCP
+277,safety stop request from MCP
+278,"ESTOP on WMS (J101 5-7,6-8) or safety stop request from user USIA (J100 1-3,2-4)"
+279,user stop USIA1 (J100-1)
+280,user stop USIA2 (J100-2)
+281,user stop USIB (J100-5/6)
+282,user stop USIB1 (J100-5)
+283,user stop USIB2 (J100-6)
+284,user stop USIC (J100-9/10)
+285,user stop USIC1 (J100-9)
+286,user stop USIC2 (J100-10)
+287,user stop USID (J100-13/14)
+288,user stop USID1 (J100-13)
+289,user stop USID2 (J100-14)
+290,no working mode request from the CPU (safety need a WMS and there is no WMS connected)
+291,SS1 safety stop condition from external safety PLC
+292,SS2 safety stop condition from external safety PLC
+293,diagnostic is missing. Check safety board I/O on control panel
+294,diagnostic is missing. Check safety board I/O on control panel
+295,WMS stop (WMS signal WMS-Local (J101-1))
+296,WMS stop (WMS signal WMS-Remote (J101-2))
+297,WMS stop (WMS signal WMS-Manu (J101-3))
+298,working mode change
+299,working mode change
+300,working mode change
+301,arm power is not allowed in brake release mode
+302,diagnostic is missing. Check safety board I/O on control panel
+303,brake test timeout
+304,activation of brake test mode
+305,the MCP plug was not placed in time after the MCP removal request
+306,a safety restart is needed
+307,safety reset signal activated
+308,the enabling device is released
+309,release the enabling device and press it again
+310,safe velocity required but disabled
+311,safe referencing required but not defined
+312,safety overspeed
+313,safe joint limits overpassed
+314,movement detected in Safe Operating Stop mode
+315,the enabling device was not released 1s after activation of service auto
+316,safety stop request from Zone1
+317,safety stop request from Zone2
+318,diagnostic is missing. Check safety board I/O on control panel
+319,diagnostic is missing. Check safety board I/O on control panel
+320,diagnostic is missing. Check safety board I/O on control panel
+321,diagnostic is missing. Check safety board I/O on control panel
+322,diagnostic is missing. Check safety board I/O on control panel
+323,diagnostic is missing. Check safety board I/O on control panel
+324,diagnostic is missing. Check safety board I/O on control panel
+325,manual slow working mode expected
+326,brake release mode expected to open brakes without arm power
+327,a brake is still in closing phase
+328,no brake is selected
+329,several brakes are selected
+330,no communication between CPU and safety board RSI9
+331,diagnostic is missing. Check safety board I/O on control panel
+332,diagnostic is missing. Check safety board I/O on control panel
+333,diagnostic is missing. Check safety board I/O on control panel
+334,diagnostic is missing. Check safety board I/O on control panel
+335,diagnostic is missing. Check safety board I/O on control panel
+336,diagnostic is missing. Check safety board I/O on control panel
+337,diagnostic is missing. Check safety board I/O on control panel
+338,diagnostic is missing. Check safety board I/O on control panel
+339,diagnostic is missing. Check safety board I/O on control panel
+340,temperature out of range
+341,internal voltage out of range
+342,internal error
+343,the safety application contains faults
+344,safety configuration is corrupted
+345,the safety configuration does not match the safety application
+346,the format of the safety configuration is not supported
+347,internal communication error
+348,test output fault
+349,input deactivation fault
+350,"signal on USIA1 (J100-1) is not the expected test signal TDO0 (J100-3/8/11, J101-5, J103-7)"
+351,"signal on USIA2 (J100-2) is not the expected test signal TDO1 (J100-4, J101-6, J103-12)"
+352,"signal on USIB1 (J100-5) is not the expected test signal TDO2 (J100-7/16, J103-5)"
+353,"signal on USIB2 (J100-6) is not the expected test signal TDO0 (J100-3/8/11, J101-5, J103-7)"
+354,"signal on USIC1 (J100-9) is not the expected test signal TDO0 (J100-3/8/11, J101-5, J103-7)"
+355,"signal on USIC2 (J100-10) is not the expected test signal TDO3 (J100-12/15, J103-3)"
+356,"signal on USID1 (J100-13) is not the expected test signal TDO3 (J100-12/15, J103-3)"
+357,"signal on USID2 (J100-14) is not the expected test signal TDO2 (J100-7/16, J103-5)"
+358,"signal on WMS-Local (J101-1) is not the expected test signal TDO0 (J100-3/8/11, J101-5, J103-7)"
+359,"signal on WMS-Remote (J101-2) is not the expected test signal TDO0 (J100-3/8/11, J101-5, J103-7)"
+360,"signal on WMS-Manu (J101-3) is not the expected test signal TDO0 (J100-3/8/11, J101-5, J103-7)"
+361,"signal on WMS-Reset (J101-4) is not the expected test signal TDO1 (J100-4, J101-6, J103-12)"
+362,"signal on Enabling1 (J103-8) is not the expected test signal TDO0 (J100-3/8/11, J101-5, J103-7)"
+363,"signal on Enabling2 (J103-17) is not the expected test signal TDO1 (J100-4, J101-6, J103-12)"
+364,"signal on Estop1 (J103-6) is not the expected test signal TDO2 (J100-7/16, J103-5)"
+365,"signal on Estop2 (J103-4) is not the expected test signal TDO3 (J100-12/15, J103-3)"
+366,signal on USOA1 (J102-1) is not as expected
+367,signal on USOA2 (J102-2) is not as expected
+368,signal on USOB1 (J102-5) is not as expected
+369,signal on USOB2 (J102-6) is not as expected
+370,signal on USOC1 (J102-9) is not as expected
+371,signal on USOC2 (J102-10) is not as expected
+372,internal signal on STO1 (J222-10) is not as expected
+373,internal signal on STO2 (J222-10) is not as expected
+374,shortcut to 24V on USOA1 (J102-1) or USOA2 (J102-2)
+375,shortcut to 24V on USOB1 (J102-5) or USOB2 (J102-6)
+376,shortcut to 24V on USOC1 (J102-9) or USOC2 (J102-10)
+377,shortcut to 24V on STO1 or STO2
+378,shortcut to 24V on STO1 or STO2
+379,safety overrun. Reduce the number/type of monitoring points
+380,diagnostic is missing. Check safety board I/O on control panel
+381,diagnostic is missing. Check safety board I/O on control panel
+382,diagnostic is missing. Check safety board I/O on control panel
+383,diagnostic is missing. Check safety board I/O on control panel
+384,unreferenced error on DSI board
+385,safety license missing or over
+386,RSI temperature exceeds threshold
+387,Encoder on Axis1 exceeds a temperature threshold
+388,Encoder on Axis2 exceeds a temperature threshold
+389,Encoder on Axis3 exceeds a temperature threshold
+390,Encoder on Axis4 exceeds a temperature threshold
+391,Encoder on Axis5 exceeds a temperature threshold
+392,Encoder on Axis6 exceeds a temperature threshold
+393,"Safe referencing (manu or auto) need to be activated in safety program because of SEL, SLS or SZM configuration"
+394,continuous axis license not compatible with safety version lower than 200.004
+395,maintenance mode is not allowed by the current user profile
+396,current working mode is not allowed by the current user profile
+397,Safe referencing inconsistency: positions of $'safe position 1$' and $'safe position 2$' should be different for all joint
+398,SS2 is unsupported in current safety version (requested from external safety PLC?)
+399,Invalid working mode. Try to perform an action which is not allowed in the current working mode.
+400,Cannot settle arm power: error reading DSI temperature.
+401,Cannot settle arm power: DSI temperature must be above 0 degrees Celsius.
+403,Arm power shutdown: internal power error (24V_OK in ARPS module)
+404,Arm power shutdown: controller power supply shutdown detected (MAIN_POWER_OK signal)
+405,Arm power shutdown: due to prepareCpuShutdown VAL3 function call
+406,Cannot apply arm power: controller not yet initialized.
+407,Cannot apply arm power: simultaneous power off request.
+408,Cannot apply arm power: arm power is still in disabling phase.
+410,Overspeed on joint. (0x0209)
+411,Cannot move: cannot cross singularity in this case.(0x021c)
+412,Translation or Rotational velocity too high (0x021e) (0x021f)
+413,Cartesian position unreachable with the specified configuration. (0x0215)
+414,Jog mode cannot be selected: first enable arm power.(0x3f15)
+415,"Jog mode cannot be selected: first select manual working mode, then enable arm power. (0x3f16)"
+416,Jog move impossible: first select a jog mode.(0x3f19)
+417,Invalid move axis or direction. (0x3f1A)
+418,Cannot apply arm power: park the pendant on the cradle.(0x3f22)
+420,
+421,
+438,Safety board communication error. Please check event logger of Stäubli controller.
+440,system event CPU-BatteryOff. CPU board battery is not present or dead.
+441,system event CPU-Overcurrent. Overcurrent detected on CPU.
+442,system event CPU-CpuReadingFailed. CPU temperature reading failed.
+443,system event CPU-BBReadingFailed. Baseboard temperature reading failed.
+444,system event CPU-FanReadingFailed. CPU board fan speed reading error.
+445,system event CPU-BatteryReadingFailed. Battery state reading failed.
+446,system event CPU-OvercurrentReadingFailed. CPU board overcurrent state reading error.
+447,system event CPU-CpuTemperatureLow. CPU temperature is lower than minimum threshold).
+448,system event CPU-CpuTemperatureWarning. CPU temperature exceeded the warning threshold.
+449,system event CPU-CpuTemperatureLimit. CPU temperature exceeded the error threshold. Behaviour of CPU board is uncertain.
+450,system event CPU-BBTemperatureLow. Baseboard temperature is lower than minimum threshold.
+451,system event CPU-BBTemperatureWarning. Baseboard temperature exceeded the warning threshold.
+452,system event CPU-BBTemperatureLimit. Baseboard temperature exceeded the error threshold Behaviour of CPU board is uncertain.
+453,
+454,system event CPU-FanHigh. CPU board fan speed is higher than limit.
+455,CPU fan control failed.
+456,Safety board error $'Not ready after a minute$': Failed to initialize. Please reboot the controller.
+457,Safety board error: Not ready anymore.
+458,Safety alarm.
+459,Safety error . A reboot is required.
+460,Safety board error communication error. Please check event logger of Stäubli controller and Staubli support service.
+461,
+470,Invalid safe referencing position.
+471,Safety restart failed during safe referencing procedure.
+472,The number of the safe reference position does not match the status of safe referencing procedure.
+473,The reference position is out of range.
+479,The test brake procedure failed.
+480,No
+481,Hibernate function not supported by controller
+482,Timeout waiting for confirmation of the safety board.
+483,Robot must be disabled to activate power save.
+484,
+485,
+486,
+487,Wake up function not supported by controller
+488,Timeout waiting for encoder interface ready state
+489,Timeout waiting for safety board ready state
+513,Internal motion generator error.
+514,Invalid parameter value.
+515,Invalid motion generator state.
+520,Joint position out of software limits.
+521,Position out of software limits on joints: %s.
+522,Overspeed on joint %u.
+525,Arm position not allowed.
+526,Translation velocity too high.
+527,Rotation velocity too high.
+530,No joint solution found (no convergence). Cartesian position probably out of reach.
+531,Cartesian position out of joint limits.
+532,Cartesian position out of workspace.
+533,Cartesian position unreachable with the specified configuration.
+534,Orientation unreachable with this arm.
+535,The arm position found is in a forbidden area.
+536,The arm positions found are either outside joint limits or inside forbidden areas.
+540,Cannot cross singularity in this case.
+541,Internal error: Cartesian path discontinuity.
+542,Configuration discontinuity: the joint position reached does not match the arm configuration requested for next movement.
+543,Robot not at trajectory start position.
+544,The Cartesian path is leading a multi-turn joint out of its range.
+550,Circular arc: the angle between start and intermediate points exceeds 180 deg.
+551,Circular arc: the angle between intermediate and end points exceeds 180 deg.
+552,"Circular arc: start, intermediate and end points are too close."
+553,"Circular arc: the orientation change between start and intermediate, or intermediate and end points is exactly 180 deg. The direction of the move is"
+554,Cartesian blending: the rotation is too large. Move direction maybe ambiguous.
+560,No blending supported with compliant moves.
+561,No blending supported with movejSync.
+562,$'joint$' blending not supported with tracking movements. Use $'Cartesian$' instead.
+563,No blending supported with trajMove.
+564,No blending supported with splines.
+565,Invalid blending in mdesc : $'Cartesian$' blending is not possible when switching between {external axes+arm} and {arm only} kinematics.
+570,Invalid data for this arm (wrong number of joints or wrong kinematic).
+571,Invalid kinematic chain part.
+572,Part mounting error: a resetMotion() is required to switch to carried part trajectory mode.
+573,Part mounting error: a resetMotion() is required to switch to carried tool trajectory mode.
+574,Part mounting error: carried part mode is not supported for this move.
+580,A $'trackOn$' movement is required to start a conveyor tracking sequence.
+581,A $'trackOff$' movement is required to end a conveyor tracking sequence.
+582,The moving frame is different from the previous one. Use a $'trackon$' movement to switch between moving frames.
+583,The tracking movements stopped: %s
+584,Tracking iterations failed: the conveyor may be out of reach or too fast.
+585,Internal tracking error.
+586,Conveyor too fast to be tracked.
+590,"Alter: invalid status, command ignored."
+591,Alter: alteration of the path starting.
+592,Alter: alteration of the path stopping.
+800,Unexpected application runtime error. Check error logger
+810,Invalid numerical calculation (division by zero).
+811,Invalid numerical calculation (e.g.ln(-1))
+820,Access to an array with an index that is larger than the array size.
+821,Access to an array with negative index or resize to zero.
+829,Invalid task name. See taskCreate() instruction.
+830,The specified name does not correspond to any VAL 3 task.
+831,A task with the same name already exists. See taskCreate instruction.
+832,Only 2 different periods for synchronous tasks are supported. Change scheduling period.
+840,Not enough memory space available.
+841,Not enough memory space to run the task. See the run memory size.
+860,Maximum instruction run time exceeded.
+861,Internal VAL 3 interpreter error
+870,Invalid instruction parameter. See the corresponding instruction.
+880,Uses data or a program from a library not loaded in the memory.
+881,Incompatible kinematic: Use of a point/joint/config that is not compatible with the arm kinematic.
+882,The reference frame or tool of a variable belongs to a library and is not accessible.
+890,The task cannot resume from the location specified. See taskResume() instruction.
+900,The speed specified in the motion descriptor is invalid (negative or too great).
+901,The acceleration specified in the motion descriptor is invalid (negative or too great).
+902,The deceleration specified in the motion descriptor is invalid (negative or too great).
+903,The translation velocity specified in the motion descriptor is invalid (negative or too great).
+904,The rotation velocity specified in the motion descriptor is invalid (negative or too great).
+905,The reach parameter specified in the movement descriptor is invalid (negative).
+906,The leave parameter specified in the movement descriptor is invalid (negative).
+922,Attempt to write in a system input.
+923,"Use of a dio, aio or sio input/output not connected to a system input/output."
+924,Attempt to access a protected system input/output
+925,"Read or write error on a dio, aio or sio (field bus error)"
+950,"Cannot run this movement instruction: a previous movement request could not be completed (point out of reach, singularity, configuration problem, etc.)"
+953,Movement command not supported
+954,"Invalid movement instruction: target out of reach, or check the movement descriptor."
+960,Invalid flange tool coordinates
+961,Invalid world tool coordinates
+962,Use of a point without a reference frame. See Definition.
+963,Use of a frame without a reference frame. See Definition.
+964,Use of a tool without reference tool. See Definition.
+965,Invalid frame or reference tool (global variable linked to a local variable)
+999,Unexpected error. Please check event logger of Stäubli controller.
